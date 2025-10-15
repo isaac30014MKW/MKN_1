@@ -59,24 +59,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <img src="CFmoto.jpeg" alt="Motocicletas">
     <span>Motocicletas</span>
   </li>
+               <!-- Video del inicio -->
+<h2>Primer torneo de cubos</h2>
+<video controls class="mi-video">
+  <source src="video_prueba.MP4" type="video/mp4">
+  Tu navegador no soporta el video HTML5.
+</video>
 </ul>
              <!-- Formulario -->
           <h3>Me interesa escucharte</h3>
           <p>Si tienes alguna sugerencia o tema que te gustaría que cubriera, no dudes en contactarnos a través de nuestro formulario. ¡Tu opinión me importanta!</p>
-       <form action="Gracias.html" method="get" class="formulario-contacto">
+  <form action="Gracias.html" method="get" class="formulario-contacto">
   <h3>Contáctanos</h3>
+
+  <!-- Nombre -->
   <div class="campo-formulario">
     <label for="name">Nombre:</label>
     <input type="text" id="name" name="user_name" required />
   </div>
+
+  <!-- Correo -->
   <div class="campo-formulario">
     <label for="mail">Correo electrónico:</label>
     <input type="email" id="mail" name="user_mail" required />
   </div>
+
+  <!-- Pregunta de opción múltiple (solo una respuesta posible) -->
   <div class="campo-formulario">
-    <label for="msg">Dejame tu comentario:</label>
+    <label>¿Qué tema te interesa más?</label><br>
+    <label><input type="radio" name="tema_interes" value="tecnologia" required> Tecnología</label><br>
+    <label><input type="radio" name="tema_interes" value="videojuegos"> Videojuegos</label><br>
+    <label><input type="radio" name="tema_interes" value="artes_marciales"> Artes Marciales</label><br>
+    <label><input type="radio" name="tema_interes" value="motocicletas"> Motocicletas</label>
+  </div>
+
+  <!-- Pregunta con varias casillas (puede seleccionar más de una) -->
+  <div class="campo-formulario">
+    <label>¿Qué tipo de contenido te gustaría ver en el futuro?</label><br>
+    <label><input type="checkbox" name="contenido[]" value="tutoriales"> Tutoriales</label><br>
+    <label><input type="checkbox" name="contenido[]" value="noticias"> Noticias</label><br>
+    <label><input type="checkbox" name="contenido[]" value="reseñas"> Reseñas</label><br>
+    <label><input type="checkbox" name="contenido[]" value="entrevistas"> Entrevistas</label>
+  </div>
+
+  <!-- Pregunta con lista desplegable -->
+  <div class="campo-formulario">
+    <label for="frecuencia">¿Con qué frecuencia visitas sitios web como este?</label>
+    <select id="frecuencia" name="frecuencia" required>
+      <option value="">Selecciona una opción</option>
+      <option value="diario">Diariamente</option>
+      <option value="semanal">Semanalmente</option>
+      <option value="mensual">Mensualmente</option>
+      <option value="ocasional">Ocasionalmente</option>
+    </select>
+  </div>
+
+  <!-- Comentario -->
+  <div class="campo-formulario">
+    <label for="msg">Deja tu comentario:</label>
     <textarea id="msg" name="user_message" rows="4" required></textarea>
   </div>
+
+  <!-- Botón -->
   <button type="submit" class="btn-enviar">Enviar</button>
 </form>
           <footer>
@@ -86,3 +130,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </body>
 </body>
 </html>
+
