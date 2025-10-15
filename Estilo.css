@@ -161,68 +161,77 @@ li {
 }
 
 /* ...Formulario inicial... */
+/* 🎯 Contenedor principal del formulario */
 .formulario-contacto {
-  background: #878787;
-  padding: 28px 32px;
-  border-radius: 12px;
-  max-width: 400px;
-  margin: 32px auto;
-  box-shadow: 0 4px 16px rgba(44, 58, 107, 0.10);
+  font-family: 'Calibri', 'Arial', sans-serif;
+  width: 80%; /* El formulario ocupará el 80% del ancho de la página */
+  max-width: 600px; /* Limita el ancho máximo para que no se estire demasiado en pantallas grandes */
+  margin: 30px auto; /* Centra el formulario horizontalmente y agrega espacio arriba y abajo */
+  background-color: #969696; /* Color de fondo claro para el formulario */
+  padding: 25px; /* Espacio interno entre el borde y el contenido */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave para dar efecto de elevación */
 }
 
-.formulario-contacto h3 {
-  text-align: center;
-  color: #FF8000;
-  margin-bottom: 18px;
-}
-
+/* 🧩 Estilo general de cada campo del formulario */
 .campo-formulario {
-  margin-bottom: 18px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 20px; /* Espacio entre un campo y otro */
 }
 
+/* 🏷️ Estilos para las etiquetas de texto (label) */
 .campo-formulario label {
- font-family: 'Calibri', 'Arial', sans-serif;
-  font-size: 18px;
-  color: #000000; /* Color de texto gris oscuro */
-  line-height: 1.6; /* Altura de línea (más legible) */
-  text-align: justify; /* Justifica el texto */
-  margin-top: 10px;
-  margin-bottom: 20px;
+  font-weight: bold; /* Texto en negritas */
+  display: block; /* Hace que cada etiqueta ocupe toda la línea */
+  margin-bottom: 8px; /* Espacio entre la etiqueta y el campo de entrada */
+  color: #333; /* Color gris oscuro para buena legibilidad */
 }
 
-.campo-formulario input,
-.campo-formulario textarea {
-  padding: 10px;
-  border: 1px solid #bfc8e6;
-  border-radius: 6px;
-  font-size: 16px;
-  background: #fff;
-  transition: border 0.2s;
+/* ✏️ Estilos para los campos de texto, correo, área de texto y menú desplegable */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%; /* Cada campo ocupa todo el ancho disponible del formulario */
+  padding: 10px; /* Espaciado interno del campo */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de letra legible */
+  box-sizing: border-box; /* Evita que el padding afecte el ancho total */
 }
 
-.campo-formulario input:focus,
-.campo-formulario textarea:focus {
-  border-color: #FF8000;
-  outline: none;
+/* ☑️ Estilo para los botones de radio y casillas de verificación */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px; /* Espacio entre el botón/casilla y el texto */
+    accent-color: #FF8000; /* Cambia este color por el que quieras (ej. naranja McLaren) */
+  cursor: pointer; /* Hace que el puntero cambie al pasar sobre ellas */
 }
 
+/* 🚀 Botón de envío */
 .btn-enviar {
-  width: 100%;
-  padding: 12px;
-  background: #ffa246;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 17px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
+  background-color: #ff9a34; /* Color naranja brillante */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 12px 25px; /* Espaciado interno del botón */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+  transition: background 0.3s; /* Suaviza el cambio de color al hacer hover */
 }
 
+/* 🌈 Efecto al pasar el cursor sobre el botón */
 .btn-enviar:hover {
-  background: #FF8000;
+  background-color: #FF8000; /* naranja más oscuro al pasar el ratón */
+}
+
+/* Video*/
+.mi-video {
+  width: 70%;              /* Ajusta el tamaño */
+  max-width: 800px;        /* Evita que crezca demasiado */
+  display: block;          /* Para poder centrarlo con margin */
+  margin: 20px auto;       /* Centrado horizontal */
+  border-radius: 15px;     /* Esquinas redondeadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra elegante */
 }
 
 
